@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CAAnimations" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="underwater-natural-picture" translatesAutoresizingMaskIntoConstraints="NO" id="esi-qQ-yB7"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aNU-Ja-BAU">
+                                <color key="backgroundColor" red="0.91764705879999997" green="0.0" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="0wa-Ew-czV"/>
+                                    <constraint firstAttribute="width" constant="10" id="l4s-oy-c6u"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0oC-zD-y2k" customClass="YellowView" customModule="CAAnimations" customModuleProvider="target">
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="NRd-fs-fgb"/>
+                                    <constraint firstAttribute="height" constant="15" id="PCH-Qk-kEn"/>
+                                </constraints>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="25" translatesAutoresizingMaskIntoConstraints="NO" id="MOH-18-hTx">
+                                <color key="minimumTrackTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="maximumTrackTintColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="0.21241081940000001" green="0.22745738579999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Number of Fish" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvs-Qx-mDn">
+                                <frame key="frameInset" minX="79" minY="564" width="217" height="21"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="217" id="9eR-tm-afA"/>
+                                    <constraint firstAttribute="height" constant="21" id="GlL-9g-9me"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="1" height="-1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLJ-lv-fA6">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Gc1-Fq-ZaM"/>
+                                    <constraint firstAttribute="width" constant="100" id="HJU-DH-nLm"/>
+                                </constraints>
+                                <state key="normal" title="REPLAY">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="replayWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EQc-Hl-aPJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="esi-qQ-yB7" secondAttribute="trailing" id="3x9-b7-YhB"/>
+                            <constraint firstItem="GLJ-lv-fA6" firstAttribute="top" secondItem="MOH-18-hTx" secondAttribute="bottom" constant="10" id="5kl-4W-3Tt"/>
+                            <constraint firstItem="GLJ-lv-fA6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9uX-wX-S1M"/>
+                            <constraint firstItem="aNU-Ja-BAU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="B3Q-gy-skx"/>
+                            <constraint firstItem="MOH-18-hTx" firstAttribute="top" secondItem="esi-qQ-yB7" secondAttribute="bottom" id="GfU-KY-1P9"/>
+                            <constraint firstItem="MOH-18-hTx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Kvp-Ih-I8n"/>
+                            <constraint firstItem="esi-qQ-yB7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OEG-n1-AwS"/>
+                            <constraint firstItem="esi-qQ-yB7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Of1-ZI-lmY"/>
+                            <constraint firstItem="vvs-Qx-mDn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P0G-Tz-z4Q"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aNU-Ja-BAU" secondAttribute="bottom" constant="250" id="Rvx-oO-a58"/>
+                            <constraint firstItem="esi-qQ-yB7" firstAttribute="leading" secondItem="0oC-zD-y2k" secondAttribute="trailing" id="Ste-ow-phA"/>
+                            <constraint firstItem="MOH-18-hTx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bMz-sY-21c"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GLJ-lv-fA6" secondAttribute="bottom" constant="10" id="cWQ-ca-91w"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MOH-18-hTx" secondAttribute="trailing" constant="20" id="fQH-iT-fDV"/>
+                            <constraint firstItem="0oC-zD-y2k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="gto-PU-zlT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0oC-zD-y2k" secondAttribute="bottom" constant="100" id="ttN-0C-ocK"/>
+                            <constraint firstItem="MOH-18-hTx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wqs-cP-fBk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="esi-qQ-yB7" secondAttribute="bottom" id="zb7-t5-CNd"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ste-ow-phA"/>
+                                <exclude reference="GfU-KY-1P9"/>
+                                <exclude reference="bMz-sY-21c"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="numberOfItems" destination="MOH-18-hTx" id="Qlm-l6-hXd"/>
+                        <outlet property="redView" destination="aNU-Ja-BAU" id="pi2-Qo-4gv"/>
+                        <outlet property="redViewLeadingConstraint" destination="B3Q-gy-skx" id="g85-xG-8Jg"/>
+                        <outlet property="yellowView" destination="0oC-zD-y2k" id="kGx-EZ-ZkJ"/>
+                        <outlet property="yellowViewLeadingConstraint" destination="gto-PU-zlT" id="tfE-um-Y6a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="368.80000000000001" y="349.47526236881561"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="underwater-natural-picture" width="800" height="600"/>
+    </resources>
+</document>
