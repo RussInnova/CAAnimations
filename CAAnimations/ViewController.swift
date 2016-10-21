@@ -23,8 +23,6 @@ class ViewController: UIViewController {
         }
     
 @IBAction func replay (sender: AnyObject) {
-
-//1 - Create view in code - BLUE - Fish animated swimming across screen
     
     let numberOfFish = Int(self.numberOfItems.value) - 1
     
@@ -85,8 +83,8 @@ class ViewController: UIViewController {
                     fish.removeFromSuperview()
             })
         }
-        
-//2 - Create view in IB - RED - Red circles
+
+    //Create view in IB - RED - Red circles
         
         let newredConstraint = NSLayoutConstraint(item: self.redView, attribute: .leading, relatedBy: .equal, toItem: self.view, attribute: .leading, multiplier: 1.0, constant: self.view.frame.width)
         
@@ -111,7 +109,7 @@ class ViewController: UIViewController {
         
         redViewLeadingConstraint = newredConstraint
         
-//3 - Create view in IB as custom view class - YELLOW - yellow circle delayed start
+    //Create view in IB as custom view class - YELLOW - yellow circle delayed start
     
          let newyellowConstraint = NSLayoutConstraint(item: self.yellowView, attribute: .leading, relatedBy: .equal, toItem: self.view, attribute: .leading, multiplier: 1.0, constant: self.view.frame.width)
         
